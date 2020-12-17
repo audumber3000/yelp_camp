@@ -1,0 +1,47 @@
+<%- include("../partials/header") %>
+
+
+
+
+
+<% currentUser %>
+
+<div class=container>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to campgrounds!!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Get started!</a>
+</div>
+
+
+
+	<div class="row row-cols-1 row-cols-md-3">
+<% camp.forEach(function(camp){ %>
+	
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="<%= camp.image %>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= camp.name %></h5>
+        <p ></p>
+		 <a class="btn btn-primary" href="/campground/<%=camp._id%>" role="button">Link</a>
+      </div>
+    </div>
+  </div>
+	
+	
+	<% }) %>
+	</div>
+
+	
+	
+	
+	
+<a class="btn btn-primary" href="/campground/new" role="button">Add new Campground</a>
+	</div>
+
+
+
+<%- include("../partials/footer") %>

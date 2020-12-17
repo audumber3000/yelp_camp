@@ -1,0 +1,24 @@
+
+.thumbnail img{
+	width:100%;
+}
+
+.img-thumbnail {
+	padding:0;
+}
+
+.fadu{
+	padding-right:10px;
+}
+
+.chart-container {
+	width:  80%;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.pie-chart-container {
+	width : 360px;
+	height : 360px;
+	float : left;
+}
